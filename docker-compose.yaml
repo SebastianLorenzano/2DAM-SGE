@@ -1,0 +1,49 @@
+services:
+  odoo:
+    image: odoo:17
+    container_name: odoo
+    depends_on:
+      - pgdb
+    ports:
+      - 8069:8069
+    volumes:
+      - ./addons:/mnt/extra-addons
+      - ./data/odoo/:/var/lib/odoo/
+      #- ./config:/etc/odoo
+      #- ./volumes/odoo:/var/lib/odoo
+      #- ./volumes/odoo/config:/etc/odoo
+      #- ./volumes/odoo/extra-addons:/mnt/extra-addons
+      #- ./volumes/odoo/filestore:/var/lib/odoo/filestore
+      #- ./volumes/odoo/sessions:/var/lib/odoo/sessions
+      #- ./volumes/odoo/addons:/var/lib/odoo/addons
+      #- ./volumes/odoo/data/:/var/lib/odoo
+    environment:
+      - HOST=pgdb
+      - USER=odoo
+      - PASSWORD=odoo
+    command: --dev=all
+
+  pgdb:
+    image: postgres:15
+    container_name: pgdb
+    environment:
+      - POSTGRES_PASSWORD=odoo
+      - POSTGRES_USER=odoo
+      - POSTGRES_DB=postgres
+    volumes:
+      - ./data/postgreSQL:/var/lib/postgresql/data
+
+# Extra admin service for data base management
+  pgadmin:
+    image: dpage/pgadmin4:8
+    container_name: pgAdmin
+    restart: always
+    depends_on:
+      - pgdb
+    ports:
+      - 80:80
+    volumes:
+      - ./data/pgadmin:/var/lib/pgadmin
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=pgadmin@pgadmin.es
+      - PGADMIN_DEFAULT_PASSWORD=pgadmin
