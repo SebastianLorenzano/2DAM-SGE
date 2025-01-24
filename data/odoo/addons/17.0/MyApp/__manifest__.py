@@ -15,7 +15,7 @@
     'depends': [
         'base'
     ],
-    'data': [],
+    'data': ['security/instituto_groups.xml'],
     'demo': [],
 
     'application': True,
