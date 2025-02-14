@@ -15,7 +15,7 @@
     'depends': [
         'base'
     ],
-    'data': [],
+    'data': ['security/chessknight_groups.xml'],
     'demo': [],
 
     'application': True,
