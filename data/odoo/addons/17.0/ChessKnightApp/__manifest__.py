@@ -6,7 +6,7 @@
     'version': '0.0.0',
     'author': "Sebastian Lorenzano",
     'maintainer': "Sebastian Lorenzano",
-    'category': 'ChessKnight',
+    'category': 'Juegos/ChessKnight',
     'sequence': 1,
     'summary': 'Aplicación de ChessKnight de Odoo',
     'description': """
@@ -15,7 +15,11 @@
     'depends': [
         'base'
     ],
-    'data': ['security/chessknight_groups.xml'],
+    'data': [
+        'security/ir.model.access.csv',
+        'security/chessknight_groups.xml',
+        'views/menu.xml',
+             ],
     'demo': [],
 
     'application': True,

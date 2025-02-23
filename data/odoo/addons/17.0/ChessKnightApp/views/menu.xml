@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+<!-- Records  -->
+
+    <record id="chessknight_action_users" model="ir.actions.act_window">
+        <field name="name">Users</field>
+        <field name="res_model">chessknight.user</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <record id="chessknight_action_games" model="ir.actions.act_window">
+        <field name="name">Games</field>
+        <field name="res_model">chessknight.game</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+<!-- Menus  -->
+
+    <menuitem id="chessknight_categoria_padre" 
+              name="ChessKnight" 
+              sequence="1"/>
+
+    <menuitem id="chessknight_menu_users" 
+              name="Users" 
+              parent="chessknight_categoria_padre" 
+              action="chessknight_action_users" 
+              sequence="10"/>
+
+    <menuitem id="chessknight_menu_games" 
+              name="Games" 
+              parent="chessknight_categoria_padre" 
+              action="chessknight_action_games" 
+              sequence="15"/>
+
+<!--
+        <menuitem id="chessknight_menu_games" 
+              name="Games" 
+              parent="chessknight_categoria_padre" 
+              action="chessknight_action_games" 
+              sequence="15"/>
+
+              -->
+</odoo>

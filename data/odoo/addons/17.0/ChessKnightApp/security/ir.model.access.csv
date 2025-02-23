@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_user_chessknight_admin,ChessKnight User Admin Access,"model_chessknight_user",base.group_system,1,1,1,1
+access_user_chessknight_user,ChessKnight User User Access,model_chessknight_user,base.group_user,1,0,0,0
+access_game_chessknight_admin,ChessKnight Game Admin Access,model_chessknight_game,base.group_system,1,1,1,1
+access_game_chessknight_user,ChessKnight Game User Access,model_chessknight_game,base.group_user,1,0,0,0
