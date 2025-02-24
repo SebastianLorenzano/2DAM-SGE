@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Tree View -->
+    <record id="view_chessknight_user_tree" model="ir.ui.view">
+        <field name="name">chessknight.user.tree</field>
+        <field name="model">chessknight.user</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="email"/>
+                <field name="game_count"/>
+                <field name="games_won_count"/>
+                <field name="win_rate"/>
+                <field name="tournaments_played"/>
+                <field name="tournaments_won"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_chessknight_user_form" model="ir.ui.view">
+        <field name="name">chessknight.user.form</field>
+        <field name="model">chessknight.user</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="avatar" widget="image" class="oe_avatar"/>
+                        <field name="name"/>
+                        <field name="email"/>
+                        <field name="bio"/>
+                    </group>
+
+                    <group string="Game Statistics">
+                        <field name="game_count"/>
+                        <field name="games_won_count"/>
+                        <field name="win_rate"/>
+                    </group>
+
+                    <group string="Tournament Statistics">
+                        <field name="tournaments_played"/>
+                        <field name="tournaments_won"/>
+                    </group>
+
+                    <notebook>
+                        <page string="Games">
+                            <field name="games">
+                                <tree>
+                                    <field name="name"/>
+                                    <field name="turn"/>
+                                    <field name="winner_name"/>
+                                    <field name="status"/>
+                                </tree>
+                            </field>
+                        </page>
+
+                        <page string="Tournaments">
+                            <field name="tournaments">
+                                <tree>
+                                    <field name="name"/>
+                                    <field name="date"/>
+                                    <field name="winner"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>

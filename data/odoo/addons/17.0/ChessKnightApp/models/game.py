@@ -70,6 +70,29 @@ class Game(models.Model):
         store=False
     )
 
+    status = fields.Selection(
+        selection=[
+            ('scheduled', 'Scheduled'),
+            ('ongoing', 'Ongoing'),
+            ('completed', 'Completed'),
+            ('cancelled', 'Cancelled')
+        ],
+        string='Status',
+        default='scheduled',
+        help='Current status of the match',
+        readonly=False,  # Explicitly set to editable
+        store=True       # Store value in the database
+    )
+
+        # Reference to the Round model
+    round_id = fields.Many2one(
+        'chessknight.round',
+        string='Round',
+        required=False,
+        ondelete='set null',
+        help='Round this game belongs to (optional)'
+    )
+
     # Constraint to ensure player1 and player2 are not the same
     _sql_constraints = [
         ('check_players_diff', 
@@ -91,7 +114,7 @@ class Game(models.Model):
             player2_name = record.player2.name if record.player2 else "Unknown"
 
             # Assign a value to the name field
-            record.name = f"Game #{record.id}: {player1_name} vs {player2_name}"
+            record.name = f"{player1_name} vs {player2_name}"
 
     # Compute the Winner's Name
     @api.depends('winner', 'player1', 'player2')
@@ -131,3 +154,10 @@ class Game(models.Model):
         for record in self:
             if record.turn < 1:
                 raise ValidationErr("Turn must be a positive integer.")
+            
+        # Update the status to completed when a winner is set
+    @api.onchange('winner')
+    def _onchange_status(self):
+        for record in self:
+            if record.winner:
+                record.status = 'completed'

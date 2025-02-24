@@ -3,16 +3,41 @@
     
 <!-- Records  -->
 
+    <!-- Action for Users Menu -->
     <record id="chessknight_action_users" model="ir.actions.act_window">
         <field name="name">Users</field>
         <field name="res_model">chessknight.user</field>
         <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p>
+                Manage ChessKnight users including their profile information, game statistics, and tournament participation.
+            </p>
+        </field>
     </record>
 
-
+    <!-- Action for Games Menu -->
     <record id="chessknight_action_games" model="ir.actions.act_window">
         <field name="name">Games</field>
         <field name="res_model">chessknight.game</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Click to create a new Game.
+            </p>
+        </field>
+    </record>
+
+    <!-- Action for Tournaments -->
+    <record id="chessknight_action_tournaments" model="ir.actions.act_window">
+        <field name="name">Tournaments</field>
+        <field name="res_model">chessknight.tournament</field>
+        <field name="view_mode">tree,form,kanban</field>
+    </record>
+    
+    <!-- Action for Rounds -->
+    <record id="chessknight_action_round" model="ir.actions.act_window">
+        <field name="name">Rounds</field>
+        <field name="res_model">chessknight.round</field>
         <field name="view_mode">tree,form</field>
     </record>
 
@@ -26,20 +51,19 @@
               name="Users" 
               parent="chessknight_categoria_padre" 
               action="chessknight_action_users" 
-              sequence="10"/>
+              sequence="1"/>
+
 
     <menuitem id="chessknight_menu_games" 
               name="Games" 
               parent="chessknight_categoria_padre" 
               action="chessknight_action_games" 
-              sequence="15"/>
+              sequence="2"/>
 
-<!--
-        <menuitem id="chessknight_menu_games" 
-              name="Games" 
+    <menuitem id="chessknight_menu_tournaments" 
+              name="Tournaments" 
               parent="chessknight_categoria_padre" 
-              action="chessknight_action_games" 
-              sequence="15"/>
+              action="chessknight_action_tournaments" 
+              sequence="3"/>
 
-              -->
 </odoo>

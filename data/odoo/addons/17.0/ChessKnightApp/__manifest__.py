@@ -18,6 +18,10 @@
     'data': [
         'security/ir.model.access.csv',
         'security/chessknight_groups.xml',
+        'views/user_views.xml',
+        'views/game_views.xml',
+        'views/round_views.xml',
+        'views/tournament_views.xml',
         'views/menu.xml',
              ],
     'demo': [],

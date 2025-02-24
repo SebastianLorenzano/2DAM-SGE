@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Tree View -->
+    <record id="view_chessknight_tournament_tree" model="ir.ui.view">
+        <field name="name">chessknight.tournament.tree</field>
+        <field name="model">chessknight.tournament</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="date"/>
+                <field name="status"/>
+                <field name="format"/>
+                <field name="number_of_rounds"/>
+                <field name="winner"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_chessknight_tournament_form" model="ir.ui.view">
+        <field name="name">chessknight.tournament.form</field>
+        <field name="model">chessknight.tournament</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <h1>
+                        <field name="name" class="oe_inline"/>
+                    </h1>
+
+                    <group>
+                        <field name="date"/>
+                        <field name="status"/>
+                        <field name="format"/>
+                        <field name="number_of_rounds"/>
+                        <field name="winner"/>
+                    </group>
+
+                    <notebook>
+                        <page string="Rounds">
+                            <field name="rounds">
+                                <tree>
+                                    <field name="name"/>
+                                    <field name="round_number"/>
+                                    <field name="status"/>
+                                    <field name="start_date"/>
+                                    <field name="end_date"/>
+                                    <field name="winner"/>
+                                </tree>
+                            </field>
+                        </page>
+
+                        <!-- Enhanced Players Page -->
+                        <page string="Players">
+                            <div class="o_form_field o_form_field_many2manytags">
+                                <label class="o_form_label" for="players">Players</label>
+                                <div class="o_tag_badges">
+                                    <field name="players" widget="many2many_tags" options="{'color_field': 'id'}"/>
+                                </div>
+                            </div>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+
+
+    <!-- Kanban View -->
+    <record id="view_chessknight_tournament_kanban" model="ir.ui.view">
+        <field name="name">chessknight.tournament.kanban</field>
+        <field name="model">chessknight.tournament</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_small_column">
+                <field name="name"/>
+                <field name="date"/>
+                <field name="status"/>
+                <field name="format"/>
+                <field name="number_of_rounds"/>
+                <field name="winner"/>
+
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click o_kanban_record">
+                            <div class="o_kanban_details">
+                                <strong><t t-esc="record.name.value"/></strong>
+                                <div>Status: <t t-esc="record.status.value"/></div>
+                                <div>Date: <t t-esc="record.date.value"/></div>
+                                <div>Format: <t t-esc="record.format.value"/></div>
+                                <div>Rounds: <t t-esc="record.number_of_rounds.value"/></div>
+                                <div>Winner: <t t-esc="record.winner.value"/></div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+</odoo>

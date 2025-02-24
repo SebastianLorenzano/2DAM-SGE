@@ -3,3 +3,7 @@ access_user_chessknight_admin,ChessKnight User Admin Access,"model_chessknight_u
 access_user_chessknight_user,ChessKnight User User Access,model_chessknight_user,base.group_user,1,0,0,0
 access_game_chessknight_admin,ChessKnight Game Admin Access,model_chessknight_game,base.group_system,1,1,1,1
 access_game_chessknight_user,ChessKnight Game User Access,model_chessknight_game,base.group_user,1,0,0,0
+access_tournament_chessknight_admin,ChessKnight Tournament Admin Access,model_chessknight_tournament,base.group_system,1,1,1,1
+access_tournament_chessknight_user,ChessKnight Tournament User Access,model_chessknight_tournament,base.group_user,1,0,0,0
+access_round_chessknight_admin,ChessKnight Round Admin Access,model_chessknight_round,base.group_system,1,1,1,1
+access_round_chessknight_user,ChessKnight Round User Access,model_chessknight_round,base.group_user,1,0,0,0

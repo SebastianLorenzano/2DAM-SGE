@@ -1,0 +1,69 @@
+<odoo>
+    <!-- Tree View for Listing Games -->
+    <record id="view_chessknight_game_tree" model="ir.ui.view">
+        <field name="name">chessknight.game.tree</field>
+        <field name="model">chessknight.game</field>
+        <field name="arch" type="xml">
+            <tree string="Games">
+                <field name="game_id"/>
+                <field name="name"/>
+                <field name="player1"/>
+                <field name="player2"/>
+                <field name="winner_name"/>
+                <field name="status"/>
+                <field name="turn"/>
+                <field name="round_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View for Creating and Editing Games -->
+    <record id="view_chessknight_game_form" model="ir.ui.view">
+        <field name="name">chessknight.game.form</field>
+        <field name="model">chessknight.game</field>
+        <field name="arch" type="xml">
+            <form string="Game">
+                <sheet>
+                    <group>
+                        <field name="game_id" readonly="1"/>
+                        <field name="name" readonly="1"/>
+                        <field name="round_id"/>
+                    </group>
+                    <group>
+                        <field name="player1"/>
+                        <field name="player2"/>
+                        <field name="turn"/>
+                    </group>
+                    <group>
+                        <field name="winner"/>
+                        <field name="winner_name" readonly="1"/>
+                        <field name="status"/>
+                    </group>
+                    <group>
+                        <field name="current_turn" readonly="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Search View for Filtering Games -->
+    <record id="view_chessknight_game_search" model="ir.ui.view">
+        <field name="name">chessknight.game.search</field>
+        <field name="model">chessknight.game</field>
+        <field name="arch" type="xml">
+            <search string="Search Games">
+                <field name="name"/>
+                <field name="player1"/>
+                <field name="player2"/>
+                <field name="winner"/>
+                <field name="status"/>
+                <field name="round_id"/>
+                <filter string="Scheduled" name="scheduled" domain="[('status', '=', 'scheduled')]"/>
+                <filter string="Ongoing" name="ongoing" domain="[('status', '=', 'ongoing')]"/>
+                <filter string="Completed" name="completed" domain="[('status', '=', 'completed')]"/>
+                <filter string="Cancelled" name="cancelled" domain="[('status', '=', 'cancelled')]"/>
+            </search>
+        </field>
+    </record>
+</odoo>
