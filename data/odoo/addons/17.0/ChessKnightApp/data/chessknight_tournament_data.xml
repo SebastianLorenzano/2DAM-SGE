@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Tournament 1 -->
+    <record id="tournament_1" model="chessknight.tournament">
+        <field name="name">Spring Chess Classic</field>
+        <field name="date">2025-03-15</field>
+        <field name="status">completed</field>
+        <field name="format">swiss</field>
+        <field name="number_of_rounds">5</field>
+        <field name="players" eval="[(6, 0, [ref('user_1'), ref('user_2'), ref('user_3'), ref('user_4')])]"/>
+        <field name="winner" ref="user_1"/>
+    </record>
+
+    <!-- Tournament 2 -->
+    <record id="tournament_2" model="chessknight.tournament">
+        <field name="name">Summer Invitational</field>
+        <field name="date">2025-06-20</field>
+        <field name="status">completed</field>
+        <field name="format">round_robin</field>
+        <field name="number_of_rounds">4</field>
+        <field name="players" eval="[(6, 0, [ref('user_5'), ref('user_6'), ref('user_7'), ref('user_8')])]"/>
+        <field name="winner" ref="user_6"/>
+    </record>
+
+    <!-- Tournament 3 -->
+    <record id="tournament_3" model="chessknight.tournament">
+        <field name="name">Autumn Championship</field>
+        <field name="date">2025-09-10</field>
+        <field name="status">completed</field>
+        <field name="format">knockout</field>
+        <field name="number_of_rounds">3</field>
+        <field name="players" eval="[(6, 0, [ref('user_9'), ref('user_10'), ref('user_11'), ref('user_12')])]"/>
+        <field name="winner" ref="user_10"/>
+    </record>
+
+    <!-- Tournament 4 -->
+    <record id="tournament_4" model="chessknight.tournament">
+        <field name="name">Winter Cup</field>
+        <field name="date">2025-12-05</field>
+        <field name="status">scheduled</field>
+        <field name="format">swiss</field>
+        <field name="number_of_rounds">4</field>
+        <field name="players" eval="[(6, 0, [ref('user_13'), ref('user_14'), ref('user_15'), ref('user_16')])]"/>
+    </record>
+
+    <!-- Tournament 5 -->
+    <record id="tournament_5" model="chessknight.tournament">
+        <field name="name">New Year Blitz</field>
+        <field name="date">2026-01-01</field>
+        <field name="status">scheduled</field>
+        <field name="format">round_robin</field>
+        <field name="number_of_rounds">6</field>
+        <field name="players" eval="[(6, 0, [ref('user_17'), ref('user_18'), ref('user_19'), ref('user_20')])]"/>
+    </record>
+
+    <!-- Tournament 6 -->
+    <record id="tournament_6" model="chessknight.tournament">
+        <field name="name">City Open</field>
+        <field name="date">2025-04-22</field>
+        <field name="status">completed</field>
+        <field name="format">knockout</field>
+        <field name="number_of_rounds">3</field>
+        <field name="players" eval="[(6, 0, [ref('user_2'), ref('user_4'), ref('user_6'), ref('user_8')])]"/>
+        <field name="winner" ref="user_4"/>
+    </record>
+
+    <!-- Tournament 7 -->
+    <record id="tournament_7" model="chessknight.tournament">
+        <field name="name">Regional Qualifier</field>
+        <field name="date">2025-05-30</field>
+        <field name="status">completed</field>
+        <field name="format">swiss</field>
+        <field name="number_of_rounds">4</field>
+        <field name="players" eval="[(6, 0, [ref('user_3'), ref('user_5'), ref('user_7'), ref('user_9')])]"/>
+        <field name="winner" ref="user_5"/>
+    </record>
+
+    <!-- Tournament 8 -->
+    <record id="tournament_8" model="chessknight.tournament">
+        <field name="name">National Championship</field>
+        <field name="date">2025-11-12</field>
+        <field name="status">ongoing</field>
+        <field name="format">round_robin</field>
+        <field name="number_of_rounds">5</field>
+        <field name="players" eval="[(6, 0, [ref('user_10'), ref('user_12'), ref('user_14'), ref('user_16')])]"/>
+    </record>
+
+    <!-- Tournament 9 -->
+    <record id="tournament_9" model="chessknight.tournament">
+        <field name="name">Chess Masters</field>
+        <field name="date">2025-08-08</field>
+        <field name="status">completed</field>
+        <field name="format">knockout</field>
+        <field name="number_of_rounds">3</field>
+        <field name="players" eval="[(6, 0, [ref('user_1'), ref('user_5'), ref('user_9'), ref('user_13')])]"/>
+        <field name="winner" ref="user_1"/>
+    </record>
+
+    <!-- Tournament 10 -->
+    <record id="tournament_10" model="chessknight.tournament">
+        <field name="name">International Open</field>
+        <field name="date">2025-07-17</field>
+        <field name="status">cancelled</field>
+        <field name="format">swiss</field>
+        <field name="number_of_rounds">4</field>
+        <field name="players" eval="[(6, 0, [ref('user_8'), ref('user_11'), ref('user_14'), ref('user_17')])]"/>
+    </record>
+</odoo>

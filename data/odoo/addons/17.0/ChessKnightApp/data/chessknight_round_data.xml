@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Rounds for Tournament 1 -->
+    <record id="round_1" model="chessknight.round">
+        <field name="tournament_id" ref="tournament_1"/>
+        <field name="round_number">1</field>
+        <field name="status">completed</field>
+        <field name="start_date">2025-03-15 10:00:00</field>
+        <field name="end_date">2025-03-15 11:30:00</field>
+    </record>
+
+    <record id="round_2" model="chessknight.round">
+        <field name="tournament_id" ref="tournament_1"/>
+        <field name="round_number">2</field>
+        <field name="status">completed</field>
+        <field name="start_date">2025-03-15 12:00:00</field>
+        <field name="end_date">2025-03-15 13:30:00</field>
+    </record>
+
+    <!-- Rounds for Tournament 2 -->
+    <record id="round_3" model="chessknight.round">
+        <field name="tournament_id" ref="tournament_2"/>
+        <field name="round_number">1</field>
+        <field name="status">completed</field>
+        <field name="start_date">2025-06-20 10:00:00</field>
+        <field name="end_date">2025-06-20 11:00:00</field>
+    </record>
+
+    <record id="round_4" model="chessknight.round">
+        <field name="tournament_id" ref="tournament_2"/>
+        <field name="round_number">2</field>
+        <field name="status">completed</field>
+        <field name="start_date">2025-06-20 11:30:00</field>
+        <field name="end_date">2025-06-20 12:30:00</field>
+    </record>
+
+    <!-- Rounds for Tournament 3 -->
+    <record id="round_5" model="chessknight.round">
+        <field name="tournament_id" ref="tournament_3"/>
+        <field name="round_number">1</field>
+        <field name="status">completed</field>
+        <field name="start_date">2025-09-10 09:00:00</field>
+        <field name="end_date">2025-09-10 10:30:00</field>
+    </record>
+
+    <record id="round_6" model="chessknight.round">
+        <field name="tournament_id" ref="tournament_3"/>
+        <field name="round_number">2</field>
+        <field name="status">completed</field>
+        <field name="start_date">2025-09-10 11:00:00</field>
+        <field name="end_date">2025-09-10 12:30:00</field>
+    </record>
+
+    <record id="round_7" model="chessknight.round">
+        <field name="tournament_id" ref="tournament_3"/>
+        <field name="round_number">3</field>
+        <field name="status">completed</field>
+        <field name="start_date">2025-09-10 13:00:00</field>
+        <field name="end_date">2025-09-10 14:30:00</field>
+    </record>
+
+    <!-- Rounds for Tournament 4 -->
+    <record id="round_8" model="chessknight.round">
+        <field name="tournament_id" ref="tournament_4"/>
+        <field name="round_number">1</field>
+        <field name="status">scheduled</field>
+        <field name="start_date">2025-12-05 10:00:00</field>
+        <field name="end_date">2025-12-05 11:30:00</field>
+    </record>
+
+    <!-- Rounds for Tournament 5 -->
+    <record id="round_9" model="chessknight.round">
+        <field name="tournament_id" ref="tournament_5"/>
+        <field name="round_number">1</field>
+        <field name="status">scheduled</field>
+        <field name="start_date">2026-01-01 09:00:00</field>
+        <field name="end_date">2026-01-01 10:30:00</field>
+    </record>
+
+    <record id="round_10" model="chessknight.round">
+        <field name="tournament_id" ref="tournament_5"/>
+        <field name="round_number">2</field>
+        <field name="status">scheduled</field>
+        <field name="start_date">2026-01-01 11:00:00</field>
+        <field name="end_date">2026-01-01 12:30:00</field>
+    </record>
+
+    <!-- Rounds for Tournament 6 -->
+    <record id="round_11" model="chessknight.round">
+        <field name="tournament_id" ref="tournament_6"/>
+        <field name="round_number">1</field>
+        <field name="status">completed</field>
+        <field name="start_date">2025-04-22 10:00:00</field>
+        <field name="end_date">2025-04-22 11:30:00</field>
+    </record>
+
+    <!-- Rounds for Tournament 7 -->
+    <record id="round_12" model="chessknight.round">
+        <field name="tournament_id" ref="tournament_7"/>
+        <field name="round_number">1</field>
+        <field name="status">completed</field>
+        <field name="start_date">2025-05-30 09:00:00</field>
+        <field name="end_date">2025-05-30 10:30:00</field>
+    </record>
+
+    <record id="round_13" model="chessknight.round">
+        <field name="tournament_id" ref="tournament_7"/>
+        <field name="round_number">2</field>
+        <field name="status">completed</field>
+        <field name="start_date">2025-05-30 11:00:00</field>
+        <field name="end_date">2025-05-30 12:30:00</field>
+    </record>
+
+    <!-- Rounds for Tournament 8 -->
+    <record id="round_14" model="chessknight.round">
+        <field name="tournament_id" ref="tournament_8"/>
+        <field name="round_number">1</field>
+        <field name="status">ongoing</field>
+        <field name="start_date">2025-11-12 10:00:00</field>
+        <field name="end_date">2025-11-12 11:30:00</field>
+    </record>
+
+      <!-- Rounds for Tournament 8 (continued) -->
+    <record id="round_15" model="chessknight.round">
+        <field name="tournament_id" ref="tournament_8"/>
+        <field name="round_number">2</field>
+        <field name="status">scheduled</field>
+        <field name="start_date">2025-11-12 12:00:00</field>
+        <field name="end_date">2025-11-12 13:30:00</field>
+    </record>
+
+    <record id="round_16" model="chessknight.round">
+        <field name="tournament_id" ref="tournament_8"/>
+        <field name="round_number">3</field>
+        <field name="status">scheduled</field>
+        <field name="start_date">2025-11-12 14:00:00</field>
+        <field name="end_date">2025-11-12 15:30:00</field>
+    </record>
+
+    <!-- Rounds for Tournament 9 -->
+    <record id="round_17" model="chessknight.round">
+        <field name="tournament_id" ref="tournament_9"/>
+        <field name="round_number">1</field>
+        <field name="status">scheduled</field>
+        <field name="start_date">2026-02-25 09:00:00</field>
+        <field name="end_date">2026-02-25 10:30:00</field>
+    </record>
+
+    <record id="round_18" model="chessknight.round">
+        <field name="tournament_id" ref="tournament_9"/>
+        <field name="round_number">2</field>
+        <field name="status">scheduled</field>
+        <field name="start_date">2026-02-25 11:00:00</field>
+        <field name="end_date">2026-02-25 12:30:00</field>
+    </record>
+
+    <!-- Rounds for Tournament 10 -->
+    <record id="round_19" model="chessknight.round">
+        <field name="tournament_id" ref="tournament_10"/>
+        <field name="round_number">1</field>
+        <field name="status">scheduled</field>
+        <field name="start_date">2026-03-10 10:00:00</field>
+        <field name="end_date">2026-03-10 11:30:00</field>
+    </record>
+
+    <record id="round_20" model="chessknight.round">
+        <field name="tournament_id" ref="tournament_10"/>
+        <field name="round_number">2</field>
+        <field name="status">scheduled</field>
+        <field name="start_date">2026-03-10 12:00:00</field>
+        <field name="end_date">2026-03-10 13:30:00</field>
+    </record>
+
+    <record id="round_21" model="chessknight.round">
+        <field name="tournament_id" ref="tournament_10"/>
+        <field name="round_number">3</field>
+        <field name="status">scheduled</field>
+        <field name="start_date">2026-03-10 14:00:00</field>
+        <field name="end_date">2026-03-10 15:30:00</field>
+    </record>
+</odoo>

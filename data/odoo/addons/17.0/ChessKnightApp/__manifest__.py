@@ -23,8 +23,14 @@
         'views/round_views.xml',
         'views/tournament_views.xml',
         'views/menu.xml',
+        'data/chessknight_user_data.xml',
+        'data/chessknight_game_data.xml',
+        'data/chessknight_tournament_data.xml',
+        'data/chessknight_round_data.xml',
              ],
-    'demo': [],
+    'demo': [
+        
+    ],
 
     'application': True,
     

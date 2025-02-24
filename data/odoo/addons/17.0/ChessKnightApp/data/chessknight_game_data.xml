@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Games for User 1 -->
+    <record id="game_1" model="chessknight.game">
+        <field name="player1" ref="user_1"/>
+        <field name="player2" ref="user_2"/>
+        <field name="turn">20</field>
+        <field name="winner">player1</field>
+        <field name="status">completed</field>
+    </record>
+
+    <record id="game_2" model="chessknight.game">
+        <field name="player1" ref="user_1"/>
+        <field name="player2" ref="user_3"/>
+        <field name="turn">15</field>
+        <field name="winner">player2</field>
+        <field name="status">completed</field>
+    </record>
+
+    <record id="game_3" model="chessknight.game">
+        <field name="player1" ref="user_1"/>
+        <field name="player2" ref="user_4"/>
+        <field name="turn">18</field>
+        <field name="winner">player1</field>
+        <field name="status">completed</field>
+    </record>
+
+    <!-- Games for User 2 -->
+    <record id="game_4" model="chessknight.game">
+        <field name="player1" ref="user_2"/>
+        <field name="player2" ref="user_3"/>
+        <field name="turn">22</field>
+        <field name="winner">player2</field>
+        <field name="status">completed</field>
+    </record>
+
+    <record id="game_5" model="chessknight.game">
+        <field name="player1" ref="user_2"/>
+        <field name="player2" ref="user_4"/>
+        <field name="turn">30</field>
+        <field name="winner">player1</field>
+        <field name="status">completed</field>
+    </record>
+
+    <record id="game_6" model="chessknight.game">
+        <field name="player1" ref="user_2"/>
+        <field name="player2" ref="user_5"/>
+        <field name="turn">25</field>
+        <field name="winner">player2</field>
+        <field name="status">completed</field>
+    </record>
+
+    <!-- Games for User 3 -->
+    <record id="game_7" model="chessknight.game">
+        <field name="player1" ref="user_3"/>
+        <field name="player2" ref="user_4"/>
+        <field name="turn">28</field>
+        <field name="winner">player1</field>
+        <field name="status">completed</field>
+    </record>
+
+    <record id="game_8" model="chessknight.game">
+        <field name="player1" ref="user_3"/>
+        <field name="player2" ref="user_5"/>
+        <field name="turn">35</field>
+        <field name="winner">player2</field>
+        <field name="status">completed</field>
+    </record>
+
+    <record id="game_9" model="chessknight.game">
+        <field name="player1" ref="user_3"/>
+        <field name="player2" ref="user_6"/>
+        <field name="turn">21</field>
+        <field name="winner">player1</field>
+        <field name="status">completed</field>
+    </record>
+
+    <!-- Games for User 4 -->
+    <record id="game_10" model="chessknight.game">
+        <field name="player1" ref="user_4"/>
+        <field name="player2" ref="user_5"/>
+        <field name="turn">17</field>
+        <field name="winner">player1</field>
+        <field name="status">completed</field>
+    </record>
+
+    <record id="game_11" model="chessknight.game">
+        <field name="player1" ref="user_4"/>
+        <field name="player2" ref="user_6"/>
+        <field name="turn">23</field>
+        <field name="winner">player2</field>
+        <field name="status">completed</field>
+    </record>
+
+    <record id="game_12" model="chessknight.game">
+        <field name="player1" ref="user_4"/>
+        <field name="player2" ref="user_7"/>
+        <field name="turn">19</field>
+        <field name="winner">player1</field>
+        <field name="status">completed</field>
+    </record>
+
+    <!-- Games for User 5 -->
+    <record id="game_13" model="chessknight.game">
+        <field name="player1" ref="user_5"/>
+        <field name="player2" ref="user_6"/>
+        <field name="turn">24</field>
+        <field name="winner">player1</field>
+        <field name="status">completed</field>
+    </record>
+
+    <record id="game_14" model="chessknight.game">
+        <field name="player1" ref="user_5"/>
+        <field name="player2" ref="user_7"/>
+        <field name="turn">30</field>
+        <field name="winner">player2</field>
+        <field name="status">completed</field>
+    </record>
+
+    <record id="game_15" model="chessknight.game">
+        <field name="player1" ref="user_5"/>
+        <field name="player2" ref="user_8"/>
+        <field name="turn">28</field>
+        <field name="winner">player1</field>
+        <field name="status">completed</field>
+    </record>
+
+    <!-- Games for User 6 -->
+<record id="game_16" model="chessknight.game">
+    <field name="player1" ref="user_6"/>
+    <field name="player2" ref="user_7"/>
+    <field name="turn">26</field>
+    <field name="winner">player1</field>
+    <field name="status">completed</field>
+</record>
+
+<record id="game_17" model="chessknight.game">
+    <field name="player1" ref="user_6"/>
+    <field name="player2" ref="user_8"/>
+    <field name="turn">22</field>
+    <field name="winner">player2</field>
+    <field name="status">completed</field>
+</record>
+
+<!-- Games for User 7 -->
+<record id="game_18" model="chessknight.game">
+    <field name="player1" ref="user_7"/>
+    <field name="player2" ref="user_9"/>
+    <field name="turn">28</field>
+    <field name="winner">player2</field>
+    <field name="status">completed</field>
+</record>
+
+<record id="game_19" model="chessknight.game">
+    <field name="player1" ref="user_7"/>
+    <field name="player2" ref="user_10"/>
+    <field name="turn">23</field>
+    <field name="winner">player1</field>
+    <field name="status">completed</field>
+</record>
+
+<!-- Games for User 8 -->
+<record id="game_20" model="chessknight.game">
+    <field name="player1" ref="user_8"/>
+    <field name="player2" ref="user_11"/>
+    <field name="turn">29</field>
+    <field name="winner">player2</field>
+    <field name="status">completed</field>
+</record>
+
+<record id="game_21" model="chessknight.game">
+    <field name="player1" ref="user_8"/>
+    <field name="player2" ref="user_12"/>
+    <field name="turn">26</field>
+    <field name="winner">player1</field>
+    <field name="status">completed</field>
+</record>
+
+<!-- Games for User 9 -->
+<record id="game_22" model="chessknight.game">
+    <field name="player1" ref="user_9"/>
+    <field name="player2" ref="user_13"/>
+    <field name="turn">27</field>
+    <field name="winner">player1</field>
+    <field name="status">completed</field>
+</record>
+
+<record id="game_23" model="chessknight.game">
+    <field name="player1" ref="user_9"/>
+    <field name="player2" ref="user_14"/>
+    <field name="turn">25</field>
+    <field name="winner">player2</field>
+    <field name="status">completed</field>
+</record>
+
+<!-- Games for User 10 -->
+<record id="game_24" model="chessknight.game">
+    <field name="player1" ref="user_10"/>
+    <field name="player2" ref="user_15"/>
+    <field name="turn">30</field>
+    <field name="winner">player1</field>
+    <field name="status">completed</field>
+</record>
+
+<record id="game_25" model="chessknight.game">
+    <field name="player1" ref="user_10"/>
+    <field name="player2" ref="user_16"/>
+    <field name="turn">28</field>
+    <field name="winner">player2</field>
+    <field name="status">completed</field>
+</record>
+
+<!-- Games for User 11 -->
+<record id="game_26" model="chessknight.game">
+    <field name="player1" ref="user_11"/>
+    <field name="player2" ref="user_17"/>
+    <field name="turn">32</field>
+    <field name="winner">player2</field>
+    <field name="status">completed</field>
+</record>
+
+<record id="game_27" model="chessknight.game">
+    <field name="player1" ref="user_11"/>
+    <field name="player2" ref="user_18"/>
+    <field name="turn">31</field>
+    <field name="winner">player1</field>
+    <field name="status">completed</field>
+</record>
+
+<!-- Games for User 12 -->
+<record id="game_28" model="chessknight.game">
+    <field name="player1" ref="user_12"/>
+    <field name="player2" ref="user_19"/>
+    <field name="turn">27</field>
+    <field name="winner">player2</field>
+    <field name="status">completed</field>
+</record>
+
+<record id="game_29" model="chessknight.game">
+    <field name="player1" ref="user_12"/>
+    <field name="player2" ref="user_20"/>
+    <field name="turn">25</field>
+    <field name="winner">player1</field>
+    <field name="status">completed</field>
+</record>
+
+<!-- Games for User 13 -->
+<record id="game_30" model="chessknight.game">
+    <field name="player1" ref="user_13"/>
+    <field name="player2" ref="user_14"/>
+    <field name="turn">24</field>
+    <field name="winner">player1</field>
+    <field name="status">completed</field>
+</record>
+
+<!-- Games for User 14 -->
+<record id="game_31" model="chessknight.game">
+    <field name="player1" ref="user_14"/>
+    <field name="player2" ref="user_15"/>
+    <field name="turn">26</field>
+    <field name="winner">player2</field>
+    <field name="status">completed</field>
+</record>
+
+<!-- Games for User 15 -->
+<record id="game_32" model="chessknight.game">
+    <field name="player1" ref="user_15"/>
+    <field name="player2" ref="user_16"/>
+    <field name="turn">28</field>
+    <field name="winner">player1</field>
+    <field name="status">completed</field>
+</record>
+
+<!-- Games for User 16 -->
+<record id="game_33" model="chessknight.game">
+    <field name="player1" ref="user_16"/>
+    <field name="player2" ref="user_17"/>
+    <field name="turn">32</field>
+    <field name="winner">player2</field>
+    <field name="status">completed</field>
+</record>
+
+<!-- Games for User 17 -->
+<record id="game_34" model="chessknight.game">
+    <field name="player1" ref="user_17"/>
+    <field name="player2" ref="user_18"/>
+    <field name="turn">31</field>
+    <field name="winner">player1</field>
+    <field name="status">completed</field>
+</record>
+
+<!-- Games for User 18 -->
+<record id="game_35" model="chessknight.game">
+    <field name="player1" ref="user_18"/>
+    <field name="player2" ref="user_19"/>
+    <field name="turn">27</field>
+    <field name="winner">player2</field>
+    <field name="status">completed</field>
+</record>
+
+<!-- Games for User 19 -->
+<record id="game_36" model="chessknight.game">
+    <field name="player1" ref="user_19"/>
+    <field name="player2" ref="user_20"/>
+    <field name="turn">29</field>
+    <field name="winner">player1</field>
+    <field name="status">completed</field>
+</record>
+
+<!-- Games for User 19 -->
+<record id="game_37" model="chessknight.game">
+    <field name="player1" ref="user_19"/>
+    <field name="player2" ref="user_1"/>
+    <field name="turn">33</field>
+    <field name="winner">player2</field>
+    <field name="status">completed</field>
+</record>
+
+<record id="game_38" model="chessknight.game">
+    <field name="player1" ref="user_19"/>
+    <field name="player2" ref="user_2"/>
+    <field name="turn">30</field>
+    <field name="winner">player1</field>
+    <field name="status">completed</field>
+</record>
+
+<!-- Games for User 20 -->
+<record id="game_39" model="chessknight.game">
+    <field name="player1" ref="user_20"/>
+    <field name="player2" ref="user_3"/>
+    <field name="turn">34</field>
+    <field name="winner">player2</field>
+    <field name="status">completed</field>
+</record>
+
+<record id="game_40" model="chessknight.game">
+    <field name="player1" ref="user_20"/>
+    <field name="player2" ref="user_4"/>
+    <field name="turn">29</field>
+    <field name="winner">player1</field>
+    <field name="status">completed</field>
+</record>
+
+<record id="game_41" model="chessknight.game">
+    <field name="player1" ref="user_20"/>
+    <field name="player2" ref="user_5"/>
+    <field name="turn">32</field>
+    <field name="winner">player2</field>
+    <field name="status">completed</field>
+</record>
+</odoo>
+

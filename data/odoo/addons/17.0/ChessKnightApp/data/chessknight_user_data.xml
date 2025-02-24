@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- 20 Users Data -->
+    <record id="user_1" model="chessknight.user">
+        <field name="name">John Doe</field>
+        <field name="email">johndoe1@example.com</field>
+        <field name="bio">Chess enthusiast and coffee lover.</field>
+    </record>
+
+    <record id="user_2" model="chessknight.user">
+        <field name="name">Jane Smith</field>
+        <field name="email">janesmith2@example.com</field>
+        <field name="bio">Avid chess player since childhood.</field>
+    </record>
+
+    <record id="user_3" model="chessknight.user">
+        <field name="name">Mike Johnson</field>
+        <field name="email">mikejohnson3@example.com</field>
+        <field name="bio">Loves tactical games and puzzles.</field>
+    </record>
+
+    <record id="user_4" model="chessknight.user">
+        <field name="name">Emily Brown</field>
+        <field name="email">emilybrown4@example.com</field>
+        <field name="bio">Strategy expert and chess coach.</field>
+    </record>
+
+    <record id="user_5" model="chessknight.user">
+        <field name="name">Liam Davis</field>
+        <field name="email">liamdavis5@example.com</field>
+        <field name="bio">Competes in chess tournaments worldwide.</field>
+    </record>
+
+    <record id="user_6" model="chessknight.user">
+        <field name="name">Emma Wilson</field>
+        <field name="email">emmawilson6@example.com</field>
+        <field name="bio">Passionate about chess and teaching.</field>
+    </record>
+
+    <record id="user_7" model="chessknight.user">
+        <field name="name">Noah Moore</field>
+        <field name="email">noahmoore7@example.com</field>
+        <field name="bio">Chess beginner eager to learn.</field>
+    </record>
+
+    <record id="user_8" model="chessknight.user">
+        <field name="name">Olivia Taylor</field>
+        <field name="email">oliviataylor8@example.com</field>
+        <field name="bio">Enjoys friendly chess matches.</field>
+    </record>
+
+    <record id="user_9" model="chessknight.user">
+        <field name="name">Mason Anderson</field>
+        <field name="email">masonanderson9@example.com</field>
+        <field name="bio">Loves strategy games and chess.</field>
+    </record>
+
+    <record id="user_10" model="chessknight.user">
+        <field name="name">Ava Thomas</field>
+        <field name="email">avathomas10@example.com</field>
+        <field name="bio">Chess is her favorite hobby.</field>
+    </record>
+
+    <record id="user_11" model="chessknight.user">
+        <field name="name">James Lee</field>
+        <field name="email">jameslee11@example.com</field>
+        <field name="bio">Chess enthusiast and programmer.</field>
+    </record>
+
+    <record id="user_12" model="chessknight.user">
+        <field name="name">Charlotte Walker</field>
+        <field name="email">charlottewalker12@example.com</field>
+        <field name="bio">Competitive chess player.</field>
+    </record>
+
+    <record id="user_13" model="chessknight.user">
+        <field name="name">Henry Scott</field>
+        <field name="email">henryscott13@example.com</field>
+        <field name="bio">Loves chess openings and tactics.</field>
+    </record>
+
+    <record id="user_14" model="chessknight.user">
+        <field name="name">Amelia Young</field>
+        <field name="email">ameliayoung14@example.com</field>
+        <field name="bio">Chess club organizer and teacher.</field>
+    </record>
+
+    <record id="user_15" model="chessknight.user">
+        <field name="name">Alexander King</field>
+        <field name="email">alexanderking15@example.com</field>
+        <field name="bio">Chess master and tournament winner.</field>
+    </record>
+
+    <record id="user_16" model="chessknight.user">
+        <field name="name">Isabella Wright</field>
+        <field name="email">isabellawright16@example.com</field>
+        <field name="bio">Chess lover and puzzle solver.</field>
+    </record>
+
+    <record id="user_17" model="chessknight.user">
+        <field name="name">Lucas Green</field>
+        <field name="email">lucasgreen17@example.com</field>
+        <field name="bio">Plays chess for fun and challenge.</field>
+    </record>
+
+    <record id="user_18" model="chessknight.user">
+        <field name="name">Mia Baker</field>
+        <field name="email">miabaker18@example.com</field>
+        <field name="bio">A rising star in chess tournaments.</field>
+    </record>
+
+    <record id="user_19" model="chessknight.user">
+        <field name="name">Benjamin Adams</field>
+        <field name="email">benjaminadams19@example.com</field>
+        <field name="bio">Chess enthusiast and strategist.</field>
+    </record>
+
+    <record id="user_20" model="chessknight.user">
+        <field name="name">Sophia Evans</field>
+        <field name="email">sophiaevans20@example.com</field>
+        <field name="bio">Enjoys playing chess with friends.</field>
+    </record>
+</odoo>
